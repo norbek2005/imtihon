@@ -1,0 +1,157 @@
+.simple {
+    background-repeat: no-repeat;
+    background-image: url(/img/simple-bg.svg);
+    background-position: right;
+}
+
+.simple__container {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    justify-content: space-between;
+}
+
+.simple__container {
+    display: flex;
+}
+
+.simple__img {
+    max-width: 260px;
+    height: auto;
+}
+
+.simple__frame1 {
+    display: none;
+}
+
+.simple__frame {
+    display: flex;
+    gap: 40px;
+}
+
+.simple__title {
+    color: #36536B;
+    font-family: 'DM Serif Display', serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 56px;
+    letter-spacing: -0.369px;
+    margin-bottom: 24px;
+}
+
+.simple__text {
+    max-width: 445px;
+    color: #6C8294;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.simple__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1034px) {
+    .simple__frame {
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .simple__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .simple__img {
+        max-width: 230px;
+    }
+
+    .simple__frame1 {
+        display: flex;
+        gap: 40px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 48px;
+    }
+
+    .simple__frame {
+        display: none;
+    }
+
+    .simple__title {
+        text-align: center;
+    }
+
+    .simple__text {
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .simple {
+        background-image: url(none);
+    }
+
+    .simple__img {
+        max-width: 190px;
+        height: auto;
+    }
+
+    .simple__title {
+        font-size: 48px;
+    }
+
+    .simple__frame1 {
+        gap: 30px;
+    }
+
+    .simple__text {
+        max-width: 573px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .simple__title {
+        font-size: 40px;
+    }
+
+    .simple__frame1 {
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .simple__img {
+        max-width: 160px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .simple__img{
+        max-width: 152px;
+    }
+    .simple__frame1{
+        gap: 10px;
+    }
+
+    .simple__title{
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .simple__img{
+        max-width: 140px;
+    }
+}
+
+@media screen and (max-width: 333px) {
+    .simple__img{
+        max-width: 130px;
+    }
+}

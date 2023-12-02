@@ -1,0 +1,110 @@
+.mail__container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mail__frame {
+    max-width: 445px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 24px;
+    background: #FBFCFE;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+}
+
+.mail__btn {
+    border-radius: 24px;
+    border: none;
+    padding-top: 16px;
+    padding-bottom: 14px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background: #BA4270;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    color: #FBFCFE;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: -0.115px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.mail__btn:hover {
+    background-color: #DA6D97;
+}
+
+.mail__email {
+    max-width: 242px;
+    width: 100%;
+    border: none;
+    background: transparent;
+    padding-left: 27px;
+    color: #36536B;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    opacity: 0.5;
+}
+
+.mail__title {
+    color: #36536B;
+    font-family: 'DM Serif Display', serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 56px;
+    letter-spacing: -0.369px;
+}
+
+@media screen and (max-width: 765px) {
+    .mail__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .mail__btn {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .mail__title {
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .mail__title {
+        font-size: 38px;
+    }
+
+    .mail__email {
+        max-width: 411px;
+        height: 48px;
+        border-radius: 24px;
+        background: #FBFCFE;
+        box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    }
+
+    .mail__btn {
+        width: 100%;
+    }
+
+    .mail__frame {
+        max-width: 330px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background: transparent;
+        height: auto;
+        gap: 16px;
+        box-shadow: none;
+    }
+}
